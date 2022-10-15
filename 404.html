@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Error 404 - Page not Found</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <style media="screen">
+      :root {
+        /*colours*/
+        --green: #81fbae;
+        --grey: #bbbbbb;
+        --dark-grey: #262626;
+        --darker-grey: #222225;
+        --darkest-grey: #111115;
+
+        /*cursors*/
+        --select: url("./_data/cursors/select.cur"), default;
+        --pointer: url("./_data/cursors/pointer.cur"), pointer;
+
+        /*fonts*/
+        --comfortaa: 'Comfortaa', sans-serif;
+        --mono: 'Share Tech Mono', monospace;
+        --roboto: 'Roboto', sans-serif;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        cursor: var(--select);
+        user-select: none;
+        font-size: min(10vh, 15vw);
+      }
+
+      a,
+      a * {
+        cursor: var(--pointer) !important;
+        text-decoration: none;
+      }
+
+      a {
+        display: contents;
+      }
+
+      body {
+        background-color: var(--dark-grey);
+        background-image: linear-gradient(#222a35 0.6px, transparent 0.6px), linear-gradient(to right, #222a35 0.6px, #262626 0.6px);
+        background-size: 12px 12px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      img {
+        height: 2em;
+      }
+
+      h1 {
+        font-family: var(--comfortaa);
+        color: var(--green);
+        margin: 1vh 0;
+      }
+
+      h2 {
+        font-family: var(--mono);
+        font-size: 0.5em;
+        color: var(--grey);
+      }
+
+      div {
+        margin: 2em 0;
+        height: 2em;
+        border-radius: 1em;
+        font-size: 0.2em;
+        padding: 0 30px;
+        font-family: var(--roboto);
+        color: var(--green);
+        background-color: var(--darker-grey);
+        border: 1px solid var(--green);
+        width: auto;
+        transition: 0.5s;
+        display: flex;
+        align-items: center;
+      }
+
+      div:hover {
+        color: var(--darkest-grey);
+        background-color: var(--green);
+      }
+    </style>
+  </head>
+  <body>
+    <img alt="error" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgd2lkdGg9IjM1MnB4IiBoZWlnaHQ9IjMwNnB4IiBzdHlsZT0ic2hhcGUtcmVuZGVyaW5nOmdlb21ldHJpY1ByZWNpc2lvbjsgdGV4dC1yZW5kZXJpbmc6Z2VvbWV0cmljUHJlY2lzaW9uOyBpbWFnZS1yZW5kZXJpbmc6b3B0aW1pemVRdWFsaXR5OyBmaWxsLXJ1bGU6ZXZlbm9kZDsgY2xpcC1ydWxlOmV2ZW5vZGQiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPGc+PHBhdGggc3R5bGU9Im9wYWNpdHk6MC45NzUiIGZpbGw9IiNmZWNjNDMiIGQ9Ik0gMTcwLjUsLTAuNSBDIDE3My41LC0wLjUgMTc2LjUsLTAuNSAxNzkuNSwtMC41QyAxODIuMTM5LDEuMzA5MDQgMTg0LjMwNiwzLjY0MjM4IDE4Niw2LjVDIDI0MS43MzEsMTAxLjk3OCAyOTYuODk4LDE5Ny42NDQgMzUxLjUsMjkzLjVDIDM1MS41LDI5NC4xNjcgMzUxLjUsMjk0LjgzMyAzNTEuNSwyOTUuNUMgMzUwLjI3MiwzMDAuMzk2IDM0Ny4yNzIsMzAzLjcyOSAzNDIuNSwzMDUuNUMgMjMwLjgzMywzMDUuNSAxMTkuMTY3LDMwNS41IDcuNSwzMDUuNUMgNC4yMzkyNCwzMDMuOTEgMS41NzI1NywzMDEuNTc2IC0wLjUsMjk4LjVDIC0wLjUsMjk1LjgzMyAtMC41LDI5My4xNjcgLTAuNSwyOTAuNUMgNTQuMjEyMSwxOTYuNzU5IDEwOC43MTIsMTAyLjc1OSAxNjMsOC41QyAxNjQuNjQyLDQuNjk5NjYgMTY3LjE0MiwxLjY5OTY2IDE3MC41LC0wLjUgWiIvPjwvZz4KPGc+PHBhdGggc3R5bGU9Im9wYWNpdHk6MSIgZmlsbD0iI2ZlZDg2NSIgZD0iTSAxNzQuNSwzMS41IEMgMTc1LjQ1OCwzMS45NTI4IDE3Ni4yOTIsMzIuNjE5NSAxNzcsMzMuNUMgMjI0Ljc4OCwxMTYuOTEyIDI3Mi45NTUsMjAwLjA3OSAzMjEuNSwyODNDIDIyMy44MzMsMjgzLjY2NyAxMjYuMTY3LDI4My42NjcgMjguNSwyODNDIDc3LjMwNDYsMTk5LjIyMSAxMjUuOTcxLDExNS4zODggMTc0LjUsMzEuNSBaIi8+PC9nPgo8Zz48cGF0aCBzdHlsZT0ib3BhY2l0eToxIiBmaWxsPSIjMDQwMzAxIiBkPSJNIDE3MS41LDk3LjUgQyAxODAuNTg3LDk2LjEgMTg2LjQyLDk5Ljc2NjcgMTg5LDEwOC41QyAxODguNTQxLDEzNS41NTIgMTg2Ljg3NSwxNjIuNTUyIDE4NCwxODkuNUMgMTgyLjMxMSwxOTguNDIyIDE3Ny40NzgsMjAxLjA4OSAxNjkuNSwxOTcuNUMgMTY4LjA4MSwxOTUuNjY0IDE2Ni45MTQsMTkzLjY2NCAxNjYsMTkxLjVDIDE2Mi42NDUsMTYzLjkyNyAxNjAuOTc4LDEzNi4yNiAxNjEsMTA4LjVDIDE2Mi4wOCwxMDYuMDA0IDE2My40MTQsMTAzLjY3IDE2NSwxMDEuNUMgMTY3LjMxNCwxMDAuMjY3IDE2OS40ODEsOTguOTMzNCAxNzEuNSw5Ny41IFoiLz48L2c+CjxnPjxwYXRoIHN0eWxlPSJvcGFjaXR5OjEiIGZpbGw9IiMwMzAyMDEiIGQ9Ik0gMTcwLjUsMjE2LjUgQyAxODUuOTA2LDIxNi4zOTMgMTkxLjczOSwyMjMuNzI3IDE4OCwyMzguNUMgMTc4LjgxNiwyNDguMTYxIDE3MC4xNDksMjQ3LjgyOCAxNjIsMjM3LjVDIDE1OC43NjMsMjI3Ljk4MiAxNjEuNTk2LDIyMC45ODIgMTcwLjUsMjE2LjUgWiIvPjwvZz4KPC9zdmc+Cg==">
+    <h1>Error 404</h1>
+    <h2>Page not Found</h2>
+    <a href="/"><div>Go to Home</div></a>
+  </body>
+</html>
