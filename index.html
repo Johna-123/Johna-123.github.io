@@ -1,9 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
-    <title>Johnathan Verstraaten | Web Developer</title>
+    <meta charset="utf-8">
+    <title>Error 404 - Page not Found</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <style media="screen">
+      :root {
+        /*colours*/
+        --green: #81fbae;
+        --grey: #bbbbbb;
+        --dark-grey: #262626;
+
+        /*cursors*/
+        --select: url("./_data/cursors/select.cur"), default;
+
+        /*fonts*/
+        --comfortaa: 'Comfortaa', sans-serif;
+        --mono: 'Share Tech Mono', monospace;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        cursor: var(--select);
+        user-select: none;
+        font-size: min(10vh, 15vw);
+      }
+
+      body {
+        background-color: var(--dark-grey);
+        background-image: linear-gradient(#222a35 0.6px, transparent 0.6px), linear-gradient(to right, #222a35 0.6px, #262626 0.6px);
+        background-size: 12px 12px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        font-family: var(--comfortaa);
+        color: var(--green);
+        margin: 0 0 1vh 0;
+      }
+
+      h2 {
+        font-family: var(--mono);
+        font-size: 0.5em;
+        color: var(--grey);
+      }
+    </style>
   </head>
   <body>
-    <h1>Site coming up soon</h1>
+    <h1>Site Coming Up Soon</h1>
+    <h2>Check back here soon</h2>
   </body>
 </html>
