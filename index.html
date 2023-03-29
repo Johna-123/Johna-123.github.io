@@ -1,61 +1,403 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Johnathan Verstraaten | Web Developer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <style media="screen">
-      :root {
-        /*colours*/
-        --green: #81fbae;
-        --grey: #bbbbbb;
-        --dark-grey: #262626;
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" charset="utf-8"></script>
+  <script src="./script.js"></script>
+  <link rel="stylesheet" href="./style.css" />
+  <title>Johnathan Verstraaten - Fullstack Web Developer and Designer</title>
+</head>
+<body onload="age(); focusE(); scrollE(); projects('jvkomplete'); contact()" onscroll="scrollE()">
+  
+  <!--navigation links-->
+  <div id="nav">
+    <div class="background">
+      <img src="https://placehold.co/360x360/f6dec6/704d29/png" alt="A picture of me" />
+      <div>
+        <a href="#projects"><button tabindex="8">Projects</button></a>
+        <a href="#code"><button tabindex="9">Code</button></a>
+      </div>
 
-        /*cursors*/
-        --select: url("/select.cur"), default;
+      <!--footer-->
+      <div class="footer">
+        <div class="pages">
 
-        /*fonts*/
-        --comfortaa: 'Comfortaa', sans-serif;
-        --mono: 'Share Tech Mono', monospace;
-      }
+          <!--external links-->
+          <div class="links">
+            <h2>Links</h2>
+            <ul>
+              <li tabindex="17">
+                <a href="https://github.com/johna-123" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <div class="nav-underline"></div>
+              </li>
+              <li tabindex="18">
+                <a href="https://codepen.io/johna-123" target="_blank" rel="noopener noreferrer">CodePen</a>
+                <div class="nav-underline"></div>
+              </li>
+              <li tabindex="19">
+                <a href="https://replit.com/@johna-123" target="_blank" rel="noopener noreferrer">Replit</a>
+                <div class="nav-underline"></div>
+              </li>
+              <li tabindex="20">
+                <a href="https://codeforum.org/members/johna.3024/" target="_blank" rel="noopener noreferrer">CodeForum</a>
+                <div class="nav-underline"></div>
+              </li>
+              <li tabindex="21">
+                <a href="https://w3profile.com/johna" target="_blank" rel="noopener noreferrer">W3Schools</a>
+                <div class="nav-underline"></div>
+              </li>
+            </ul>
+          </div>
 
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        cursor: var(--select);
-        user-select: none;
-        font-size: min(10vh, 8.5vw);
-      }
+          <!--legal pages-->
+          <div class="legal">
+            <h2>Legal</h2>
+            <ul>
+              <li tabindex="22">
+                <a>Terms of Service</a>
+                <div class="nav-underline"></div>
+              </li>
+              <li tabindex="23">
+                <a>Privacy Policy</a>
+                <div class="nav-underline"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p>Copyright &copy; 2023 Johnathan Verstraaten</p>
+      </div>
+    </div>
 
-      body {
-        background-color: var(--dark-grey);
-        background-image: linear-gradient(#222a35 0.6px, transparent 0.6px), linear-gradient(to right, #222a35 0.6px, #262626 0.6px);
-        background-size: 12px 12px;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
+    <!--page navigation-->
+    <ul>
+      <li tabindex="1"><a onclick="more()" href="#home">Home<div class="nav-underline"></div></a></ol>
+      <li tabindex="2"><a onclick="more()" href="#projects">Projects<div class="nav-underline"></div></a></ol>
+      <li tabindex="3"><a onclick="more()" href="#code">Code<div class="nav-underline"></div></a></ol>
+      <li tabindex="4"><a onclick="more()" href="#tools">Tools<div class="nav-underline"></div></a></ol>
+      <li tabindex="5"><a onclick="more()" href="#contact">Contact<div class="nav-underline"></div></a></ol>
+    </ul>
+  </div>
 
-      h1 {
-        font-family: var(--comfortaa);
-        color: var(--green);
-        margin: 0 0 1vh 0;
-      }
+  <!--home section-->
+  <section id="home">
+    <div class="body">
+      <div class="main">
+        <div class="title">
+          <h1>Johnathan Verstraaten</h1>
+          <div class="underline"></div>
+        </div>
+        <p>
+          Hi there! I'm Johnathan Verstraaten, a <span class="age">..</span> year old <span class="highlight">Fullstack Web Developer</span> and <span class="highlight">Web Designer</span>.
+          <br /><br />
+          I design and build responsive, dynamic websites and mobile apps.
+        </p>
+        <div class="about-links">
+          <a><button onclick="more('about')" tabindex="6">
+            <i>More About Me &rarr;</i>
+            <div class="nav-underline"></div>
+          </button></a>
+          <a><button onclick="more('code')" tabindex="7">
+            <i>My Coding Journey &rarr;</i>
+            <div class="nav-underline"></div>
+          </button></a>
+        </div>
+      </div>
+      <div class="more">
+        <div class="inner"></div>
+      </div>
+    </div>
+  </section>
 
-      h2 {
-        font-family: var(--mono);
-        font-size: 0.5em;
-        color: var(--grey);
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Site Coming Up Soon</h1>
-    <h2>Check back here soon</h2>
-  </body>
+  <!--projects section-->
+  <section id="projects">
+    <div class="body">
+      <div class="main">
+        <div class="title">
+          <h1>Projects</h1>
+          <div class="underline"></div>
+        </div>
+        <div class="project">
+          <div class="overlay">
+            <h2></h2>
+            <h4></h4>
+            <p class="work"></p>
+            <p class="date"></p>
+            <a target="_blank"><button tabindex="10">Go to site</button></a>
+          </div>
+          <img width="100%" />
+        </div>
+        <div class="project-list">
+          <img tabindex="11" src="./images/projects/jvkomplete-logo.png" alt="JVKomplete Logo" height="48px" onclick="projects('jvkomplete')" />
+          <img tabindex="12" src="./images/projects/crazychickengirl-logo.png" alt="Crazy Chicken Girl Logo" height="48px" onclick="projects('crazychickengirl')" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--code section-->
+  <section id="code">
+    <div class="body">
+      <div class="main">
+        <div class="title">
+          <h1>Code</h1>
+          <div class="underline"></div>
+        </div>
+        <div class="code-grid">
+
+          <!--html-->
+          <div class="code-lang">
+            <div class="code-margin"></div>
+            <div class="code-logo">
+              <img src="./images/code/html.svg" alt="HTML Logo">
+            </div>
+            <div class="text">
+              <h3>HTML</h3>
+              <p>HyperText Markup Language (HTML) is used to make the structure of a web page.</p>
+            </div>
+          </div>
+
+          <!--css-->
+          <div class="code-lang">
+            <div class="code-margin"></div>
+            <div class="code-logo">
+              <img src="./images/code/css.svg" alt="CSS Logo">
+            </div>
+            <div class="text">
+              <h3>CSS</h3>
+              <p>Short for Cascading Style Sheets, CSS is the language used to add styling to HTML documents.</p>
+            </div>
+          </div>
+
+          <!--tailwindcss-->
+          <div class="code-lang">
+            <div class="code-margin"></div>
+            <div class="code-logo">
+              <img src="./images/code/tailwindcss.svg" alt="TailwindCSS Logo">
+            </div>
+            <div class="text">
+              <h3>TailwindCSS</h3>
+              <p>TailwindCSS is a CSS framework allowing elements to be styled directly in the HTML using class names.</p>
+            </div>
+          </div>
+
+          <!--scss-->
+          <div class="code-lang">
+            <div class="code-margin"></div>
+            <div class="code-logo">
+              <img src="./images/code/scss.svg" alt="SCSS Logo">
+            </div>
+            <div class="text">
+              <h3>SCSS</h3>
+              <p>SCSS is one of the two SASS syntaxes. SASS is a CSS preprocessor and compiles into normal CSS code.</p>
+            </div>
+          </div>
+
+          <!--javascript-->
+          <div class="code-lang">
+            <div class="code-margin"></div>
+            <div class="code-logo">
+              <img src="./images/code/javascript.svg" alt="JavaScript Logo">
+            </div>
+            <div class="text">
+              <h3>JavaScript</h3>
+              <p>JavaScript, often paired with HTML and CSS, adds effects and makes the site dynamic.</p>
+            </div>
+          </div>
+
+          <!--node.js-->
+          <div class="code-lang">
+            <div class="code-margin"></div>
+            <div class="code-logo">
+              <img src="./images/code/nodejs.svg" alt="Node.js Logo">
+            </div>
+            <div class="text">
+              <h3>Node.js</h3>
+              <p>Node.js is a JavaScript runtime environment that makes it possible to run JavaScript on a server.</p>
+            </div>
+          </div>
+
+          <!--react.js-->
+          <div class="code-lang">
+            <div class="code-margin"></div>
+            <div class="code-logo">
+              <img src="./images/code/reactjs.svg" alt="React.js Logo">
+            </div>
+            <div class="text">
+              <h3>React.js</h3>
+              <p>React.js is a JavaScript library used to build user interfaces with components.</p>
+            </div>
+          </div>
+
+          <!--reactnative-->
+          <div class="code-lang">
+            <div class="code-margin"></div>
+            <div class="code-logo">
+              <img src="./images/code/react.svg" alt="React Native Logo">
+            </div>
+            <div class="text">
+              <h3>React Native</h3>
+              <p>React Native is a JS library for building mobile applications with JavaScript, and compiling it to the device's native API.</p>
+            </div>
+          </div>
+
+          <!--jquery-->
+          <div class="code-lang">
+            <div class="code-margin"></div>
+            <div class="code-logo">
+              <img src="./images/code/jquery.svg" alt="jQuery Logo">
+            </div>
+            <div class="text">
+              <h3>jQuery</h3>
+              <p>jQuery is a JavaScript framework that shortens and simplifies JavaScript code, allowing code to be written quicker.</p>
+            </div>
+          </div>
+
+          <!--mongodb-->
+          <div class="code-lang">
+            <div class="code-margin"></div>
+            <div class="code-logo">
+              <img src="./images/code/mongodb.svg" alt="MongoDB Logo">
+            </div>
+            <div class="text">
+              <h3>MongoDB</h3>
+              <p>MongoDB is a NoSQL database program, using JSON structured documents rather than tables in typical SQL databases.</p>
+            </div>
+          </div>
+
+          <!--php-->
+          <div class="code-lang">
+            <div class="code-margin"></div>
+            <div class="code-logo">
+              <img src="./images/code/php.svg" alt="PHP Logo">
+            </div>
+            <div class="text">
+              <h3>PHP</h3>
+              <p>PHP: HyperText Preprocessor (PHP) is a server-side scripting language used to create web pages.</p>
+            </div>
+          </div>
+
+          <!--python-->
+          <div class="code-lang">
+            <div class="code-margin"></div>
+            <div class="code-logo">
+              <img src="./images/code/python.svg" alt="Python Logo">
+            </div>
+            <div class="text">
+              <h3>Python</h3>
+              <p>Python is a multi-purpose language, and is one of the most popular programming languages.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--tools section-->
+  <section id="tools">
+    <div class="body">
+      <div class="main">
+        <div class="title">
+          <h1>Tools</h1>
+          <div class="underline"></div>
+        </div>
+        <div class="tools">
+          <div class="coding">
+            <h2>Coding</h2>
+
+            <!--vscode-->
+            <div class="tool">
+              <div class="tool-logo">
+                <img src="./images/tools/vscode.svg" alt="Visual Studio Code Logo">
+              </div>
+              <div class="text">
+                <h3>Visual Studio Code</h3>
+                <p>The main code editor I use for pretty much everything, especially Node.js applications.</p>
+              </div>
+            </div>
+
+            <!--atom-->
+            <div class="tool">
+              <div class="tool-logo">
+                <img src="./images/tools/atom.svg" alt="Atom Logo">
+              </div>
+              <div class="text">
+                <h3>Atom</h3>
+                <p>Another code editor I use occasionally, but due to it's sunset in December 2022, I use VSCode most of the time.</p>
+              </div>
+            </div>
+
+            <!--npm-->
+            <div class="tool">
+              <div class="tool-logo">
+                <img src="./images/tools/npm.svg" alt="NPM Logo">
+              </div>
+              <div class="text">
+                <h3>NPM</h3>
+                <p>A JavaScript package manager, making it quick and easy to add shared JavaScript code to a web app.</p>
+              </div>
+            </div>
+
+            <!--git-->
+            <div class="tool">
+              <div class="tool-logo">
+                <img src="./images/tools/git.svg" alt="Git Logo">
+              </div>
+              <div class="text">
+                <h3>Git</h3>
+                <p>An open-source version control system to keep track of changes in code.</p>
+              </div>
+            </div>
+          </div>
+          <div class="designing">
+            <h2>Designing</h2>
+
+            <!--figma-->
+            <div class="tool">
+              <div class="tool-logo">
+                <img src="./images/tools/figma.svg" alt="Figma Logo">
+              </div>
+              <div class="text">
+                <h3>Figma</h3>
+                <p>A real-time collaborative application used to design user interfaces. I mostly use it to design websites.</p>
+              </div>
+            </div>
+
+            <!--gimp-->
+            <div class="tool">
+              <div class="tool-logo">
+                <img src="./images/tools/gimp.svg" alt="GIMP Logo">
+              </div>
+              <div class="text">
+                <h3>GIMP</h3>
+                <p>An open-source graphics editor, used for image editing & manipulation, and free-form drawing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--contact section-->
+  <section class="contact">
+    <div class="body">
+      <div class="main">
+        <div class="title">
+          <h1>Contact</h1>
+          <div class="underline"></div>
+        </div>
+        <form id="contact">
+          <input autocomplete="off" type="hidden" name="contact_number">
+          <input autocomplete="off" required class="focus" tabindex="13" type="text" name="user_name" id="name" placeholder="Name..." />
+          <input autocomplete="off" required class="focus" tabindex="14" type="email" name="user_email" id="email" placeholder="Email..." />
+          <textarea autocomplete="off" required class="focus" tabindex="15" name="message" id="message" placeholder="Message..."></textarea>
+          <input required tabindex="16" type="submit" value="" />
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
 </html>
