@@ -52,7 +52,6 @@
   font-family: var(--font-normal);
   font-size: var(--text-normal);
   color: var(--grey-light);
-  cursor: var(--select);
 }
 
 ::selection {
@@ -138,7 +137,7 @@ li,
 .project-list img,
 input[type="submit"],
 i {
-  cursor: var(--pointer);
+  cursor: pointer;
 }
 
 #nav {
@@ -488,6 +487,14 @@ section:not(#home):not(.contact) {
   text-align: right;
   right: 200px;
   opacity: 0;
+}
+
+.code-lang:nth-child(odd) h3 {
+  direction: rtl;
+}
+
+.code-lang a {
+  direction: ltr;
 }
 
 .code-margin {
