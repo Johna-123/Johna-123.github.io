@@ -169,23 +169,21 @@ function projects(project) {
 function age() {
   const today = [new Date().getDate(), new Date().getMonth() + 1, new Date().getFullYear()];
   const birthday = [30, 9, 2007];
-  let age;
 
   if (today[1] < birthday[1]) {
-    age = today[2] - birthday[2] - 1;
+    return today[2] - birthday[2] - 1;
   } else if (today[1] > birthday[1]) {
-    age = today[2] - birthday[2];
+    return today[2] - birthday[2];
   } else if (today[1] == birthday[1]) {
     if (today[0] < birthday[0]) {
-      age = today[2] - birthday[2] - 1;
+      return today[2] - birthday[2] - 1;
     } else {
-      age = today[2] - birthday[2];
+      return today[2] - birthday[2];
     }
   }
-  $(".age").html(age);
 }
 
-//remove focus hen clicked
+//remove focus when clicked
 function focusE() {
   $("*").click(function() {
     if ($(this).hasClass("focus")) {
@@ -239,7 +237,7 @@ function more(text) {
   if (text == "about") {
     $(".more .inner").html("\
       <h2>More About Me</h2>\
-      <p>Hi there! I'm Johnathan Verstraaten, a 15 year old Christian home-schooler with a strong passion for programming.</p>\
+      <p>Hi there! I'm Johnathan Verstraaten, a <span class='age'>" + age() + "</span> year old Christian home-schooler with a strong passion for programming.</p>\
       <br />\
       <p>I'm half Dutch and half Ghanaian, born in The Netherlands. I currently live on a rubber plantation in Liberia, but have lived in Ghana, Ivory Coast, Cameroon and The Netherlands before that.</p>\
       <br />\
@@ -262,7 +260,7 @@ function more(text) {
   } else if (text == "code") {
     $(".more .inner").html("\
       <h2>My Coding Journey</h2>\
-      <p>Hi there! I'm Johnathan Verstraaten, a 15 year old Christian home-schooler with a strong passion for programming.</p>\
+      <p>Hi there! I'm Johnathan Verstraaten, a <span class='age'>" + age() + "</span> year old Christian home-schooler with a strong passion for programming.</p>\
       <br />\
       <p>I started programming in early 2020, at the age of 12. At the time, I was interested in Desktop Application and Game Development, so I started learning C++ using <a href='https://w3schools.com' target='_blank'>W3Schools</a>.</p>\
       <br />\
