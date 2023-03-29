@@ -40,10 +40,6 @@
   --arrow-coral-loading: url("./images/icons/arrow-coral-loading.svg");
   --arrow-coral-success: url("./images/icons/arrow-coral-success.svg");
   --arrow-coral-failed: url("./images/icons/arrow-coral-failed.svg");
-  
-  --select: /*url("./images/icons/select.svg"),*/ default;
-  --pointer: /*url("./images/icons/pointer.svg"),*/ pointer;
-  --text: /*url("./images/icons/text.svg"),*/ text;
 }
 
 * {
