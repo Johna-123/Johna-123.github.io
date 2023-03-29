@@ -270,7 +270,7 @@ function more(text) {
       <br />\
       <p>Early 2022, after having some decent knowledge in the 3 main frontend languages (HTML, CSS and JavaScript), I started learning PHP and SQL, to get into the server side of websites too. Later the same year I learnt the basics of Python, as part of IGCSE Computer Science.</p>\
       <br />\
-      <p>I got my first freelance job in 2022, making the <a href='https://jvkomplete.com' target='_blank'>JVKomplete</a> site. It did take longer than it should have to complete the site, but I did learn a lot of new things while working on it.</p>\
+      <p>I got my first freelance job in 2022<!--, making the <a href='https://jvkomplete.com' target='_blank'>JVKomplete</a> site-->. It did take longer than it should have to complete the site, but I did learn a lot of new things while working on it.</p>\
       <br />\
       <p>This year, I started learning more modern web technologies, including Node.js, React.js, React Native and SCSS.</p>\
       <br />\
