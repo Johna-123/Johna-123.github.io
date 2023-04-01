@@ -597,7 +597,10 @@ section:not(#home):not(.contact) {
 .contact form {
   direction: ltr;
   width: 100%;
-  height: auto;
+  height: 344px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
 }
 
