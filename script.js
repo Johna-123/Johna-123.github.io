@@ -243,7 +243,7 @@ function more(text) {
       <br />\
       <p>Right now I'm doing IGCSE Biology, Chemistry, & Computer Science, and have done English, Maths, Additional Maths, Physics & Environmental Management.</p>\
       <br />\
-      <p>Apart from coding, I enjoy keeping and taking care of animals, cooking, playing tennis, and will occasionally do work in the garden, play the piano and play football.</p>\
+      <p>Apart from coding, I enjoy keeping and taking care of animals, photography (especially wildlife photography), cooking, playing tennis, and will occasionally do work in the garden, play the piano and play football.</p>\
       <a><button style='margin-top: 32px;' onclick='more(\"close\")'><i>&larr; Back</i><div class='nav-underline'></div></button></a>\
     ");
 
