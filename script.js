@@ -237,7 +237,7 @@ function more(text) {
   if (text == "about") {
     $(".more .inner").html("\
       <h2>More About Me</h2>\
-      <p>Hi there! I'm Johnathan Verstraaten, a <span class='age'>" + age() + "</span> year old Christian home-schooler with a strong passion for programming.</p>\
+      <p>Hi there! I'm Johnathan Verstraaten, a <span class='age'>" + age() + "</span> year old Christian home-schooler with a strong passion for programming and photography.</p>\
       <br />\
       <p>I'm half Dutch and half Ghanaian, born in The Netherlands. I currently live on a rubber plantation in Liberia, but have lived in Ghana, Ivory Coast, Cameroon and The Netherlands before that.</p>\
       <br />\
