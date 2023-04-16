@@ -1,29 +1,29 @@
-<svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_6_4)">
-<path d="M5 7L3 2H4L6.5 8H2.5L2 7H5Z" fill="url(#paint0_linear_6_4)"/>
-<path d="M9.5 8L7 2H8L10 6.5L12 2H13L10.5 8H9.5Z" fill="url(#paint1_linear_6_4)"/>
-<path d="M2.53576 2.1857L4.26148 6.5H2C1.82671 6.5 1.66578 6.58973 1.57467 6.73713C1.48357 6.88454 1.47529 7.06861 1.55279 7.22361L2.05279 8.22361C2.13748 8.393 2.31061 8.5 2.5 8.5H6.5C6.66718 8.5 6.82329 8.41645 6.91603 8.27735C7.00876 8.13825 7.02584 7.96201 6.96154 7.80769L4.46154 1.80769C4.3839 1.62137 4.20185 1.5 4 1.5H3C2.83409 1.5 2.67898 1.5823 2.58597 1.71969C2.49295 1.85707 2.47414 2.03165 2.53576 2.1857ZM9.03846 8.19231C9.1161 8.37863 9.29815 8.5 9.5 8.5H10.5C10.7019 8.5 10.8839 8.37863 10.9615 8.19231L13.4615 2.19231C13.5258 2.03799 13.5088 1.86175 13.416 1.72265C13.3233 1.58355 13.1672 1.5 13 1.5H12C11.8024 1.5 11.6233 1.61637 11.5431 1.79693L10 5.26889L8.45691 1.79693C8.37666 1.61637 8.19759 1.5 8 1.5H7C6.83282 1.5 6.67671 1.58355 6.58397 1.72265C6.49124 1.86175 6.47416 2.03799 6.53846 2.19231L9.03846 8.19231Z" stroke="url(#paint2_linear_6_4)" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7 9L5 4H6L8.5 10H4.5L4 9H7Z" fill="url(#paint0_linear_6_4)"/>
+<path d="M11.5 10L9 4H10L12 8.5L14 4H15L12.5 10H11.5Z" fill="url(#paint1_linear_6_4)"/>
+<path d="M5 3.5C4.83409 3.5 4.67898 3.5823 4.58597 3.71969C4.49295 3.85707 4.47414 4.03165 4.53576 4.1857L6.26148 8.5H4C3.82671 8.5 3.66578 8.58973 3.57467 8.73713C3.48357 8.88454 3.47529 9.06861 3.55279 9.22361L4.05279 10.2236C4.13748 10.393 4.31061 10.5 4.5 10.5H8.5C8.66718 10.5 8.82329 10.4164 8.91603 10.2773C9.00876 10.1383 9.02584 9.96201 8.96154 9.80769L6.46154 3.80769C6.3839 3.62137 6.20185 3.5 6 3.5H5ZM9 3.5C8.83282 3.5 8.67671 3.58355 8.58397 3.72265C8.49124 3.86175 8.47416 4.03799 8.53846 4.19231L11.0385 10.1923C11.1161 10.3786 11.2981 10.5 11.5 10.5H12.5C12.7019 10.5 12.8839 10.3786 12.9615 10.1923L15.4615 4.19231C15.5258 4.03799 15.5088 3.86175 15.416 3.72265C15.3233 3.58355 15.1672 3.5 15 3.5H14C13.8024 3.5 13.6233 3.61637 13.5431 3.79693L12 7.26889L10.4569 3.79693C10.3767 3.61637 10.1976 3.5 10 3.5H9Z" stroke="url(#paint2_linear_6_4)" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 <defs>
-<filter id="filter0_d_6_4" x="0" y="0" width="15" height="10" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d_6_4" x="0" y="0" width="19" height="14" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset/>
-<feGaussianBlur stdDeviation="0.5"/>
+<feGaussianBlur stdDeviation="1.5"/>
 <feComposite in2="hardAlpha" operator="out"/>
 <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_6_4"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_6_4" result="shape"/>
 </filter>
-<linearGradient id="paint0_linear_6_4" x1="2" y1="2" x2="13" y2="8" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_6_4" x1="4" y1="4" x2="15" y2="10" gradientUnits="userSpaceOnUse">
 <stop stop-color="#704D29"/>
 <stop offset="1" stop-color="#EEBF90"/>
 </linearGradient>
-<linearGradient id="paint1_linear_6_4" x1="2" y1="2" x2="13" y2="8" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint1_linear_6_4" x1="4" y1="4" x2="15" y2="10" gradientUnits="userSpaceOnUse">
 <stop stop-color="#704D29"/>
 <stop offset="1" stop-color="#EEBF90"/>
 </linearGradient>
-<linearGradient id="paint2_linear_6_4" x1="2" y1="2" x2="13" y2="8" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint2_linear_6_4" x1="4" y1="4" x2="15" y2="10" gradientUnits="userSpaceOnUse">
 <stop stop-color="#704D29"/>
 <stop offset="1" stop-color="#EEBF90"/>
 </linearGradient>
