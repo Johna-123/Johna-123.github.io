@@ -1,5 +1,5 @@
 # johna-123.github.io
 Just my personal website.
-<a href="https://johna-123.github.io/" target="_blank">johna-123.github.io</a>
+<a href="https://johna.is-a.dev" target="_blank">johna.is-a.dev</a>
 
 NOTE: the site is not ready yet
