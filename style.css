@@ -339,13 +339,14 @@ section:not(#home):not(.contact) {
   justify-content: center;
   align-items: center;
   opacity: 0;
-  overflow-y: auto;
   z-index: -1;
 }
 
 .more .inner {
   width: 784px;
   height: auto;
+  max-height: 80vh;
+  overflow-y: auto;
 }
 
 .more a {
