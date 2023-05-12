@@ -241,7 +241,7 @@ function more(text) {
       <br />\
       <p>I'm half Dutch and half Ghanaian, born in The Netherlands. I currently live on a rubber plantation in Liberia, but have lived in Ghana, Ivory Coast, Cameroon and The Netherlands before that.</p>\
       <br />\
-      <p>Right now I'm doing IGCSE Biology, Chemistry, & Computer Science, and have done English, Maths, Additional Maths, Physics & Environmental Management.</p>\
+      <p>I'm currently finishing my IGCSE's in English, Mathematics, Additional Mathematics, Physics, Chemistry, Biology, Computer Science, and Environmental Management.</p>\
       <br />\
       <p>Apart from coding, I enjoy keeping and taking care of animals, photography (especially wildlife photography), cooking, playing tennis, and will occasionally do work in the garden, play the piano and play football.</p>\
       <a><button style='margin-top: 32px;' onclick='more(\"close\")'><i>&larr; Back</i><div class='nav-underline'></div></button></a>\
