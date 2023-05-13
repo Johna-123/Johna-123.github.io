@@ -110,7 +110,8 @@ function scrollE() {
 }
 
 //projects
-fetch("./projectData.json").then(response => response.json()).then(data => {const projectData = data}).catch(err => {console.log(err)});
+let projectData;
+fetch("./projectData.json").then(response => response.json()).then(data => {projectData = data}).catch(err => {console.log(err)});
 
 function projects(project) {
   $(".project img").css("opacity", "0");
