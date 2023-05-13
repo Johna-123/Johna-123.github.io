@@ -109,9 +109,9 @@ function scrollE() {
   }
 }
 
+//projects
 fetch("./projectData.json").then(response => response.json()).then(data => {const projectData = data}).catch(err => {console.log(err)});
 
-//projects
 function projects(project) {
   $(".project img").css("opacity", "0");
   setTimeout(() => {
