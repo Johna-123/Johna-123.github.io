@@ -116,13 +116,13 @@ function projects(project) {
   $(".project img").css("opacity", "0");
   setTimeout(() => {
     $(".project img").removeAttr("src")
-    $(".project img").attr("alt", projectsData[project].name);
-    $(".project img").attr("src", projectsData[project].image);
-    $(".project h2").text(projectsData[project].name);
-    $(".project h4").text(projectsData[project].lang);
-    $(".project p.work").text("Work: " + projectsData[project].work);
-    $(".project p.date").text("Date Completed: " + projectsData[project].date);
-    $(".project a").attr("href", projectsData[project].link);
+    $(".project img").attr("alt", projectData[project].name);
+    $(".project img").attr("src", projectData[project].image);
+    $(".project h2").text(projectData[project].name);
+    $(".project h4").text(projectData[project].lang);
+    $(".project p.work").text("Work: " + projectData[project].work);
+    $(".project p.date").text("Date Completed: " + projectData[project].date);
+    $(".project a").attr("href", projectData[project].link);
     $(".project img").css("opacity", "1");
   }, 500);
 }
