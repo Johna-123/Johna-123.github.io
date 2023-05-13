@@ -109,48 +109,10 @@ function scrollE() {
   }
 }
 
+fetch("./projectData.json").then(response => response.json()).then(data => {const projectData = data}).catch(err => {console.log(err)});
+
 //projects
 function projects(project) {
-  /*const projectsData = {
-    jvkomplete: {
-      name: "JVKomplete",
-      work: "Coded entire site",
-      lang: "HTML, PHP, CSS, JavaScript, jQuery",
-      date: "April 2023",
-      link: "https://jvkomplete.com",
-      image: "./images/projects/jvkomplete.png"
-    },
-  
-    crazychickengirl: {
-      name: "Crazy Chicken Girl",
-      work: "Designed & coded entire site",
-      lang: "HTML, CSS, JavaScript, Node.JS, React.JS, MySQL",
-      date: "April 2023",
-      link: "https://crazy-chicken-girl.22web.org",
-      image: "./images/projects/crazychickengirl.png"
-    }
-  };*/
-
-  const projectsData = {
-    jvkomplete: {
-      name: "Lorem Ipsum",
-      work: "Coded entire site",
-      lang: "HTML, PHP, CSS, JavaScript, jQuery",
-      date: "April 2023",
-      link: "",
-      image: "https://placehold.co/1920x1080/f6dec6/704d29/png"
-    },
-  
-    crazychickengirl: {
-      name: "Lorem Ipsum",
-      work: "Designed & coded entire site",
-      lang: "HTML, CSS, JavaScript, Node.JS, React.JS, MySQL",
-      date: "April 2023",
-      link: "",
-      image: "https://placehold.co/1920x1080/f6dec6/704d29/png"
-    }
-  };
-
   $(".project img").css("opacity", "0");
   setTimeout(() => {
     $(".project img").removeAttr("src")

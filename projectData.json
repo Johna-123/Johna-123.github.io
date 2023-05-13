@@ -1,0 +1,19 @@
+{
+  "jvkomplete": {
+    "name": "Lorem Ipsum",
+    "work": "Coded entire site",
+    "lang": "HTML, PHP, CSS, JavaScript, jQuery",
+    "date": "April 2023",
+    "link": "",
+    "image": "https://placehold.co/1920x1080/f6dec6/704d29/png"
+  },
+
+  "crazychickengirl": {
+    "name": "Lorem Ipsum",
+    "work": "Designed & coded entire site",
+    "lang": "HTML, CSS, JavaScript, Node.JS, React.JS, MySQL",
+    "date": "April 2023",
+    "link": "",
+    "image": "https://placehold.co/1920x1080/f6dec6/704d29/png"
+  }
+}
